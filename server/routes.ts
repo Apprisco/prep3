@@ -71,7 +71,6 @@ class Routes {
     console.log(postOwner);
     if(givenUser===postOwner)
     {
-      console.log("deleted");
       return await Post.delete(_id);
     }
     throw new Error("Wrong User!");
